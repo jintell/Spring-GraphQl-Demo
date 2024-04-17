@@ -28,7 +28,7 @@ The application is configured to create and map graphql schema in the following 
 
 `java -jar build/libs/patient_graph_demo-0.0.1-SNAPSHOT.jar`
 
-# Alternatively, Build and Run with a Single maven command.
+# Alternatively, Build and Run with a Single gradle command.
 
 `./gradlew spring-boot:run`
 
