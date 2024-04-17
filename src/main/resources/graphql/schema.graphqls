@@ -1,0 +1,12 @@
+type Query {
+    patientById(id: Int): PatientDto
+    allPatient(page: Int, size: Int): [PatientDto!]!
+    patientsByVisitDate(page: Int, size: Int, from: String, to: String): [PatientDto!]!
+}
+
+type Mutation {
+    createPatient(patientRequest: PatientRequest): PatientDto
+    updatePatient(id: Int, patientRequest: PatientRequest): PatientDto
+    removePatient(id: Int): String
+}
+

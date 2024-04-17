@@ -1,0 +1,21 @@
+type PatientDto {
+    id: ID
+    firstName: String
+    lastName: String
+    gender: String
+    phoneNumber: String
+    email: String
+    address: String
+    visitDate: String
+    diagnosis: String
+    drugCode: String
+    additionalInformation: [AdditionalInformation]
+    createdAt: String
+}
+
+type AdditionalInformation {
+    ssn: String
+    race: String
+    notes: String
+    newPatient: Boolean
+}

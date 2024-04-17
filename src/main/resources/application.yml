@@ -1,0 +1,33 @@
+server:
+  port: 9025
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://${DISCOVERY_HOST}:9761/eureka/
+
+logging:
+  level:
+    ROOT: info
+    com.holit.platform: INFO
+
+spring:
+  r2dbc:
+    url: r2dbc:mysql://${DB_HOST}?useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    name: patient_service
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  devtools:
+    restart.enabled: true
+  pool:
+    enabled: true
+  application:
+    name: patient_graph_demo
+  graphql:
+    graphiql:
+      enabled: true
+    path: /graph
