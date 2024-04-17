@@ -24,7 +24,7 @@ The application is configured to create and map graphql schema in the following 
 
 `./gradlew clean build`
 
-# Run the built Authorization Server
+# Run the built GraphQL Server
 
 `java -jar build/libs/patient_graph_demo-0.0.1-SNAPSHOT.jar`
 
@@ -33,6 +33,9 @@ The application is configured to create and map graphql schema in the following 
 `./gradlew spring-boot:run`
 
 **Note:** This option will not build the artifact (patient_graph_demo-0.0.1-SNAPSHOT.jar) for you
+
+# Open the GraphQL API interface  
+Click on `http://localhost:9025/graphiql?path=/graph` to open the interface on the browser
 
 # Stop the server
 
